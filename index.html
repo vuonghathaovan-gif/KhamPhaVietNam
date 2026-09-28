@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khám phá Việt Nam - Cổng thông tin Du lịch 3 Miền</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+    <!-- ===== 1. THANH TIỆN ÍCH ===== -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <span>🌏 Cẩm nang du lịch văn hóa &amp; thiên nhiên Việt Nam</span>
+            <div class="top-bar-right">
+                <span>📞 Hotline: <strong>1900 2026</strong></span>
+                <span>✉️ info@khamphavietnam.vn</span>
+                <span>🇻🇳 VN | EN</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== 2. ĐẦU TRANG + THANH ĐIỀU HƯỚNG ===== -->
+    <header class="site-header">
+        <div class="container navbar">
+            <a class="logo" href="index.html">
+                <span class="logo-icon">🧭</span>
+                <div class="logo-text">
+                    KHÁM PHÁ <span>VIỆT NAM</span>
+                    <small>Cổng thông tin Du lịch 3 Miền</small>
+                </div>
+            </a>
+
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-burger" aria-label="Mở menu">☰</label>
+
+            <nav class="main-nav" aria-label="Menu chính">
+                <ul>
+                    <li><a class="active" href="index.html">Trang chủ</a></li>
+                    <li><a href="hanoi.html">Hà Nội</a></li>
+                    <li><a href="danang.html">Đà Nẵng</a></li>
+                    <li><a href="#lich-trinh">Lịch trình</a></li>
+                    <li><a href="#thuvien">Thư viện</a></li>
+                    <li class="nav-cta"><a href="#tim-hanh-trinh">Tìm hành trình</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== 3. HERO ===== -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <span class="hero-badge">✦ HÀNH TRÌNH DI SẢN Á ĐÔNG</span>
+            <h1>Khám phá vẻ đẹp Việt Nam</h1>
+            <p class="hero-price">Du lịch 3 miền Bắc – Trung – Nam chỉ từ <strong>1.990.000 VND*</strong></p>
+            <p class="hero-desc">Hành trình đi qua những di sản văn hóa ngàn năm văn hiến, vịnh biển kỳ quan thiên nhiên thế giới và những phố cổ bình yên trải dài khắp dải đất hình chữ S.</p>
+            <div class="hero-actions">
+                <a class="btn btn-accent" href="#mienbac">⛰️ Miền Bắc</a>
+                <a class="btn btn-outline" href="#mientrung">🏖️ Miền Trung</a>
+                <a class="btn btn-outline" href="#miennam">🌴 Miền Nam</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hộp tìm hành trình (đè lên đáy hero) -->
+    <div class="container booking-wrap" id="tim-hanh-trinh">
+        <div class="booking">
+            <div class="booking-tags">
+                <span class="tag">✈️ Khứ hồi</span>
+                <span class="tag">🎒 Du lịch tự túc</span>
+                <span class="tag hot">🏷️ Ưu đãi mùa lễ hội 2026</span>
+            </div>
+            <form class="booking-form" action="hanoi.html" method="get">
+                <div class="field">
+                    <label for="from-place">📍 Điểm khởi hành</label>
+                    <select id="from-place" name="from">
+                        <option value="hn">Hà Nội (HAN)</option>
+                        <option value="dad">Đà Nẵng (DAD)</option>
+                        <option value="sgn">TP. Hồ Chí Minh (SGN)</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="to-place">🧭 Điểm đến</label>
+                    <select id="to-place" name="to">
+                        <option value="danang">Đà Nẵng – Biển Mỹ Khê</option>
+                        <option value="hanoi">Hà Nội – Thủ đô văn hiến</option>
+                        <option value="halong">Quảng Ninh – Vịnh Hạ Long</option>
+                        <option value="hoian">Quảng Nam – Phố cổ Hội An</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="depart-date">📅 Ngày khởi hành</label>
+                    <input type="date" id="depart-date" name="depart" value="2026-10-15">
+                </div>
+                <div class="field">
+                    <label for="return-date">📅 Ngày trở về</label>
+                    <input type="date" id="return-date" name="return" value="2026-10-20">
+                </div>
+                <button type="submit" class="btn btn-accent">🚀 Tìm hành trình</button>
+            </form>
+        </div>
+
+        <!-- Thanh số liệu -->
+        <div class="stats" aria-label="Số liệu du lịch">
+            <div class="stat"><strong>63</strong><span>Tỉnh &amp; Thành phố</span></div>
+            <div class="stat"><strong>08</strong><span>Di sản Thế giới UNESCO</span></div>
+            <div class="stat"><strong>3.260 km</strong><span>Đường bờ biển tuyệt đẹp</span></div>
+            <div class="stat"><strong>54</strong><span>Bản sắc văn hóa dân tộc</span></div>
+        </div>
+    </div>
+
+    <!-- ===== 4. NỘI DUNG CHÍNH ===== -->
+    <main>
+
+        <!-- Khối 1: Điểm đến nổi bật (ảnh có liên kết) -->
+        <section class="section" id="noi-bat">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Trải nghiệm thị giác</span>
+                    <h2 class="section-title">Các Điểm Đến Nổi Bật</h2>
+                    <p class="section-desc">Nhấn vào hình ảnh <strong>Hà Nội</strong> hoặc <strong>Đà Nẵng</strong> để xem trang thông tin chi tiết.</p>
+                </div>
+
+                <div class="grid-4">
+                    <figure class="dest-card">
+                        <div class="dest-thumb">
+                            <span class="dest-tag tag-bac">Miền Bắc</span>
+                            <a href="hanoi.html"><img src="images/hanoi.jpg" alt="Thủ đô Hà Nội"></a>
+                        </div>
+                        <figcaption>
+                            <h3 class="dest-title">Hà Nội</h3>
+                            <p>Thủ đô ngàn năm văn hiến với 36 phố phường và Hồ Gươm cổ kính.</p>
+                            <a class="dest-cta" href="hanoi.html">Xem chi tiết &rarr;</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="dest-card">
+                        <div class="dest-thumb">
+                            <span class="dest-tag tag-trung">Miền Trung</span>
+                            <a href="danang.html"><img src="images/danang.jpg" alt="Thành phố Đà Nẵng"></a>
+                        </div>
+                        <figcaption>
+                            <h3 class="dest-title">Đà Nẵng</h3>
+                            <p>Thành phố của những cây cầu biểu tượng và bãi biển quyến rũ.</p>
+                            <a class="dest-cta" href="danang.html">Xem chi tiết &rarr;</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="dest-card">
+                        <div class="dest-thumb">
+                            <span class="dest-tag tag-bac">Quảng Ninh</span>
+                            <img src="images/halong.jpg" alt="Vịnh Hạ Long">
+                        </div>
+                        <figcaption>
+                            <h3 class="dest-title">Hạ Long</h3>
+                            <p>Kỳ quan thiên nhiên thế giới với hàng nghìn đảo đá vôi kỳ vĩ.</p>
+                            <span class="dest-cta muted">Điểm đến kỳ quan</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="dest-card">
+                        <div class="dest-thumb">
+                            <span class="dest-tag tag-trung">Quảng Nam</span>
+                            <img src="images/hoian.jpg" alt="Phố cổ Hội An">
+                        </div>
+                        <figcaption>
+                            <h3 class="dest-title">Hội An</h3>
+                            <p>Thương cảng cổ yên bình rực rỡ sắc màu đèn lồng về đêm.</p>
+                            <span class="dest-cta muted">Di sản văn hóa</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Khối 2: Danh sách UL và OL -->
+        <section class="section section--white" id="diem-den">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Gợi ý hành trình</span>
+                    <h2 class="section-title">Tâm Điểm Du Lịch Việt Nam</h2>
+                    <p class="section-desc">Tổng hợp những tọa độ du lịch đặc sắc và bảng xếp hạng điểm đến được yêu thích nhất trong năm.</p>
+                </div>
+
+                <div class="grid-2">
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">🗺️</span>
+                            <div>
+                                <h3>Các địa điểm du lịch nổi tiếng</h3>
+                                <small>Danh sách không thứ tự (UL)</small>
+                            </div>
+                        </div>
+                        <ul class="list">
+                            <li><a href="hanoi.html"><strong>Hà Nội</strong> – Thủ đô ngàn năm văn hiến</a></li>
+                            <li><a href="danang.html"><strong>Đà Nẵng</strong> – Thành phố đáng sống bên sông Hàn</a></li>
+                            <li><strong>Hạ Long</strong> – Kỳ quan thiên nhiên vịnh biển</li>
+                            <li><strong>Hội An</strong> – Phố cổ đèn lồng bên dòng sông Hoài</li>
+                            <li><strong>Đà Lạt</strong> – Xứ sở sương mù và ngàn hoa</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <span class="card-icon">🏆</span>
+                            <div>
+                                <h3>Top 5 địa điểm bạn muốn đến</h3>
+                                <small>Bảng xếp hạng yêu thích (OL)</small>
+                            </div>
+                        </div>
+                        <ol class="list">
+                            <li><a href="hanoi.html"><strong>Hà Nội</strong> – Trải nghiệm mùa thu phố cổ</a></li>
+                            <li><a href="danang.html"><strong>Đà Nẵng</strong> – Nghỉ dưỡng biển Mỹ Khê &amp; Bà Nà</a></li>
+                            <li><strong>Hội An</strong> – Khám phá kiến trúc di sản cổ kính</li>
+                            <li><strong>Hạ Long</strong> – Du thuyền ngắm vịnh đá vôi</li>
+                            <li><strong>Đà Lạt</strong> – Săn mây và thưởng thức cà phê đồi thông</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Khối 3: Danh sách lồng nhau theo vùng miền -->
+        <section class="section" id="vungmien">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Bản đồ 3 miền</span>
+                    <h2 class="section-title">Địa Điểm Theo Vùng Miền</h2>
+                    <p class="section-desc">Mỗi vùng miền mang một sắc thái thiên nhiên, khí hậu và văn hóa ẩm thực riêng biệt.</p>
+                </div>
+
+                <div class="grid-3">
+                    <div class="card region-card bac" id="mienbac">
+                        <span class="badge badge-bac">⛰️ Vùng núi &amp; Đồng bằng Bắc Bộ</span>
+                        <ul class="nested-root">
+                            <li><strong>Miền Bắc</strong>
+                                <ul>
+                                    <li><a href="hanoi.html">Hà Nội (Xem chi tiết &rarr;)</a></li>
+                                    <li>Hạ Long</li>
+                                    <li>Sa Pa</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card region-card trung" id="mientrung">
+                        <span class="badge badge-trung">🏖️ Di sản &amp; Biển xanh</span>
+                        <ul class="nested-root">
+                            <li><strong>Miền Trung</strong>
+                                <ul>
+                                    <li><a href="danang.html">Đà Nẵng (Xem chi tiết &rarr;)</a></li>
+                                    <li>Hội An</li>
+                                    <li>Huế</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card region-card nam" id="miennam">
+                        <span class="badge badge-nam">🌴 Đô thị sôi động &amp; Đảo ngọc</span>
+                        <ul class="nested-root">
+                            <li><strong>Miền Nam</strong>
+                                <ul>
+                                    <li>TP. Hồ Chí Minh</li>
+                                    <li>Vũng Tàu</li>
+                                    <li>Phú Quốc</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Khối 4: Bảng lịch trình & chi phí -->
+        <section class="section section--white" id="lich-trinh">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Lập kế hoạch chuyến đi</span>
+                    <h2 class="section-title">Bảng Lịch Trình &amp; Chi Phí Tham Khảo</h2>
+                    <p class="section-desc">Thời điểm đẹp nhất, thời lượng gợi ý và chi phí dự kiến cho từng điểm đến.</p>
+                </div>
+
+                <div class="table-wrap">
+                    <table class="travel-table">
+                        <thead>
+                            <tr>
+                                <th class="c">STT</th>
+                                <th>Điểm đến</th>
+                                <th class="c">Vùng miền</th>
+                                <th class="c">Thời điểm lý tưởng</th>
+                                <th class="c">Thời lượng</th>
+                                <th class="c">Chi phí tham khảo</th>
+                                <th>Trải nghiệm tiêu biểu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="c"><strong>01</strong></td>
+                                <td><a href="hanoi.html"><strong>🏛️ Thủ đô Hà Nội</strong></a></td>
+                                <td class="c"><span class="badge badge-bac">Miền Bắc</span></td>
+                                <td class="c">Tháng 9 – Tháng 11</td>
+                                <td class="c">3 Ngày 2 Đêm</td>
+                                <td class="c price">2.500.000 đ</td>
+                                <td>Hồ Gươm, Văn Miếu, Lăng Bác, Phở &amp; Cà phê trứng</td>
+                            </tr>
+                            <tr>
+                                <td class="c"><strong>02</strong></td>
+                                <td><a href="danang.html"><strong>🌉 TP. Đà Nẵng</strong></a></td>
+                                <td class="c"><span class="badge badge-trung">Miền Trung</span></td>
+                                <td class="c">Tháng 3 – Tháng 8</td>
+                                <td class="c">4 Ngày 3 Đêm</td>
+                                <td class="c price">3.800.000 đ</td>
+                                <td>Bà Nà Hills, Cầu Rồng, Biển Mỹ Khê, Ngũ Hành Sơn</td>
+                            </tr>
+                            <tr>
+                                <td class="c"><strong>03</strong></td>
+                                <td><strong>⛵ Vịnh Hạ Long</strong></td>
+                                <td class="c"><span class="badge badge-bac">Miền Bắc</span></td>
+                                <td class="c">Tháng 4 – Tháng 10</td>
+                                <td class="c">2 Ngày 1 Đêm</td>
+                                <td class="c price">2.900.000 đ</td>
+                                <td>Du thuyền ngủ đêm trên vịnh, chèo Kayak, Hang Sửng Sốt</td>
+                            </tr>
+                            <tr>
+                                <td class="c"><strong>04</strong></td>
+                                <td><strong>🏮 Phố cổ Hội An</strong></td>
+                                <td class="c"><span class="badge badge-trung">Miền Trung</span></td>
+                                <td class="c">Tháng 2 – Tháng 7</td>
+                                <td class="c">2 Ngày 1 Đêm</td>
+                                <td class="c price">1.990.000 đ</td>
+                                <td>Chùa Cầu, thả đèn hoa đăng sông Hoài, thưởng thức Cao lầu</td>
+                            </tr>
+                            <tr>
+                                <td class="c"><strong>05</strong></td>
+                                <td><strong>🏝️ Đảo Phú Quốc</strong></td>
+                                <td class="c"><span class="badge badge-nam">Miền Nam</span></td>
+                                <td class="c">Tháng 11 – Tháng 4</td>
+                                <td class="c">4 Ngày 3 Đêm</td>
+                                <td class="c price">4.500.000 đ</td>
+                                <td>Lặn ngắm san hô, cáp treo Hòn Thơm, ngắm hoàng hôn</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Khối 5: Thư viện hình ảnh -->
+        <section class="section" id="thuvien">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Khoảnh khắc Việt Nam</span>
+                    <h2 class="section-title">Thư Viện Hình Ảnh</h2>
+                    <p class="section-desc">Bấm vào từng bức ảnh để xem kích thước đầy đủ trong tab mới.</p>
+                </div>
+
+                <div class="gallery">
+                    <a class="gallery-item" href="images/hanoi.jpg" target="_blank">
+                        <img src="images/hanoi.jpg" alt="Hà Nội">
+                        <span class="gallery-caption">🔍 Hà Nội</span>
+                    </a>
+                    <a class="gallery-item" href="images/danang.jpg" target="_blank">
+                        <img src="images/danang.jpg" alt="Đà Nẵng">
+                        <span class="gallery-caption">🔍 Đà Nẵng</span>
+                    </a>
+                    <a class="gallery-item" href="images/halong.jpg" target="_blank">
+                        <img src="images/halong.jpg" alt="Hạ Long">
+                        <span class="gallery-caption">🔍 Hạ Long</span>
+                    </a>
+                    <a class="gallery-item" href="images/hoian.jpg" target="_blank">
+                        <img src="images/hoian.jpg" alt="Hội An">
+                        <span class="gallery-caption">🔍 Hội An</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Khối 6: Kêu gọi hành động -->
+        <section class="section section--white">
+            <div class="container">
+                <div class="cta">
+                    <h2>Bạn đã sẵn sàng cho chuyến hành trình tiếp theo?</h2>
+                    <p>Bắt đầu khám phá từ trái tim thủ đô Hà Nội hoặc tận hưởng nắng gió biển miền Trung tại Đà Nẵng ngay hôm nay.</p>
+                    <div class="cta-actions">
+                        <a class="btn btn-accent" href="hanoi.html">🏛️ Khám phá Hà Nội</a>
+                        <a class="btn btn-outline" href="danang.html">🌉 Khám phá Đà Nẵng</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== 5. CHÂN TRANG ===== -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a class="logo" href="index.html">
+                    <span class="logo-icon">🧭</span>
+                    <div class="logo-text">
+                        KHÁM PHÁ <span>VIỆT NAM</span>
+                        <small>Cổng thông tin Du lịch 3 Miền</small>
+                    </div>
+                </a>
+                <p>Chuyên trang giới thiệu vẻ đẹp danh lam thắng cảnh, di sản lịch sử và văn hóa du lịch ba miền Bắc – Trung – Nam.</p>
+            </div>
+            <div>
+                <h4>Liên kết nhanh</h4>
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="hanoi.html">Du lịch Hà Nội</a></li>
+                    <li><a href="danang.html">Du lịch Đà Nẵng</a></li>
+                    <li><a href="https://www.google.com" target="_blank">Tìm kiếm Google</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Khám phá vùng miền</h4>
+                <ul>
+                    <li><a href="#mienbac">Miền Bắc Việt Nam</a></li>
+                    <li><a href="#mientrung">Miền Trung Việt Nam</a></li>
+                    <li><a href="#miennam">Miền Nam Việt Nam</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Thông tin thực hành</h4>
+                <ul>
+                    <li>📍 Học phần: Phát triển Ứng dụng Web</li>
+                    <li>🎓 Trường Đại học CMC (CMC University)</li>
+                    <li>📞 Hotline: 1900 2026</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Khám phá Việt Nam - Bài thực hành Phát triển Ứng dụng Web, CMC University</p>
+    </footer>
+
+</body>
+</html>
